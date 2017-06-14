@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SmartBasket</string>
+    <string-array name="subjects">
+        <item>Arabic</item>
+        <item>Math</item>
+        <item>English</item>
+        <item>Science</item>
+        <item>Geographic&amp;History</item>
+
+    </string-array>
+
+    <string name="spinner_title">Select a subject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

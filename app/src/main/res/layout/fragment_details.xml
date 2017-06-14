@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.mohamedfawzy.smartbasket.DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="556dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_name"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Level : "
+        android:id="@+id/tv_level"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your Score : "
+        android:id="@+id/tv_score"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select a subject to get a question"
+            android:id="@+id/tv_stmt"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_score"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/darkblue"
+            android:textSize="18dp"
+            />
+
+        <!--
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_stmt"
+            android:spinnerMode="dialog"
+            android:textColor="@color/darkblue"
+            />
+            -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_stmt"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linear1"
+            android:gravity="center"
+            android:weightSum="5"
+
+            >
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arabic"
+                android:id="@+id/b_subjects"
+                android:background="@drawable/button_square_transparent"
+                android:layout_weight="3"
+                android:textColor="@color/darkblue"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Get a Question Now   "
+            android:id="@+id/b_getQ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/linear1"
+            android:background="@drawable/button_rounded_transparent"
+            android:textColor="@color/white"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/b_getQ"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/progress"
+            android:visibility="gone"
+            />
+
+
+
+    </RelativeLayout>
+</FrameLayout>
